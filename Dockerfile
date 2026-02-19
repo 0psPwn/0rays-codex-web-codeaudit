@@ -24,7 +24,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # Python
     python3 python3-pip \
     # Java
-    openjdk-8-jre-headless \
+    openjdk-17-jre-headless \
+    # PHP
+    php8.3-cli php8.3-curl php8.3-xml php8.3-mbstring \
     # Node.js
     nodejs npm \
     && rm -rf /var/lib/apt/lists/*
@@ -54,7 +56,8 @@ RUN pip install --break-system-packages --no-cache-dir \
     gmpy2 \
     sympy \
     requests \
-    beautifulsoup4
+    beautifulsoup4 \
+    semgrep
 
 # 7. 目录结构
 RUN mkdir -p /data/workspace /data/codex /data/tools /data/cc-switch
