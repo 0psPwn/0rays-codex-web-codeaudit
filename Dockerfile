@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # 网络
     net-tools iputils-ping dnsutils netcat-openbsd nmap socat dirsearch sqlmap nikto whatweb \
     # 压缩
-    unzip p7zip-full xz-utils bzip2 tar \
+    unzip p7zip-full xz-utils bzip2 tar zip \
     # 二进制分析
     binutils strace ltrace \
     # Python

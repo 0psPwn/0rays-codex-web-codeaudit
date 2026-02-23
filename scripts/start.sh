@@ -35,6 +35,9 @@ wire_api = "responses"
 [[skills.config]]
 path = "/data/skills/"
 enabled = true
+
+[features]
+multi_agent = true
 TOML
         echo "[+] Generated $CODEX_CFG"
     else
